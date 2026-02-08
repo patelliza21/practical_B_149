@@ -1,3 +1,10 @@
 Hi, this is Haidarali Sunsara. 
 I'm currently a student in the MCA  at Uka Tarsadia University.
 my roll no is : 149
+
+gh auth login
+gh create repo pra2 --public 
+git init
+git remote add origin <url>
+git add . 
+git push origin main
