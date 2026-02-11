@@ -8,5 +8,6 @@ git push origin main --force
 ### Clone Repository
 ```bash
 git clone https://github.com/haidarali-110/practical_B_149.git
+git add .
 git commit -m "pra 3 done"
 git push origin main --force
