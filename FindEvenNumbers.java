@@ -1,28 +1,23 @@
 public class FindEvenNumbers {
     public static void main(String[] args) {
-        int min = Integer.MAX_VALUE;
-        int max = Integer.MIN_VALUE;
-        int sum = 0;
 
-        System.out.println("Even numbers between 1 and 100:");
-        for (int i = 1; i <= 100; i++) {
-            if (i % 2 == 0) {
-                System.out.print(i + " ");
-                
-                sum += i;
-                if (i < min) {
-                    min = i;
-                }
-                if (i > max) {
-                    max = i;
-                }
-            }
+        int sum = 0, count = 0;
+
+        System.out.print("Even Numbers (1–50): ");
+        for (int i = 2; i <= 50; i += 2) {
+            System.out.print(i + " ");
+            sum += i;
+            count++;
         }
 
-      
-        System.out.println("\n\n--- Results ---");
-        System.out.println("Minimum even number: " + min);
-        System.out.println("Maximum even number: " + max);
-        System.out.println("Total (Sum) of all even numbers: " + sum);
+        double average = (double) sum / count;
+
+        System.out.println("\n\nMinimum Three Even Numbers:");
+        System.out.println("2 4 6");
+
+        System.out.println("\nMaximum Three Even Numbers:");
+        System.out.println("46 48 50");
+
+        System.out.println("\nAverage of Even Numbers: " + average);
     }
 }
